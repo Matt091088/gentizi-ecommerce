@@ -1,0 +1,213 @@
+.before-after {
+
+  padding: 140px 8%;
+
+  background: #0f0f0f;
+
+  color: white;
+}
+
+/* Header */
+.before-header {
+
+  max-width: 900px;
+
+  margin: 0 auto 80px;
+
+  text-align: center;
+}
+
+.before-header span {
+
+  color: #c8a94d;
+
+  letter-spacing: 3px;
+
+  font-size: 0.9rem;
+
+  font-weight: bold;
+}
+
+.before-header h2 {
+
+  font-size: 4rem;
+
+  line-height: 1.1;
+
+  margin: 20px 0 35px;
+}
+
+.before-header p {
+
+  color: rgba(255,255,255,0.75);
+
+  line-height: 1.9;
+
+  margin-bottom: 20px;
+
+  font-size: 1.08rem;
+}
+
+/* Slider */
+.comparison-container {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  height: 700px;
+
+  margin: auto;
+
+  overflow: hidden;
+
+  border-radius: 30px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+
+/* Imagen */
+.comparison-image {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Imagen después */
+.after-image-wrapper {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 50%;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+/* Línea */
+.comparison-line {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 4px;
+
+  height: 100%;
+
+  background: white;
+}
+
+/* Círculo */
+.comparison-circle {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: #c8a94d;
+
+  color: black;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.8rem;
+
+  font-weight: bold;
+}
+
+/* Labels */
+.comparison-label {
+
+  position: absolute;
+
+  top: 30px;
+
+  padding: 10px 22px;
+
+  border-radius: 40px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  z-index: 5;
+}
+
+.before-label {
+
+  left: 30px;
+
+  background: rgba(0,0,0,0.5);
+}
+
+.after-label {
+
+  right: 30px;
+
+  background: #c8a94d;
+
+  color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .before-header h2 {
+
+    font-size: 2.5rem;
+  }
+
+  .comparison-container {
+
+    height: 400px;
+  }
+}
+
+.projects-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 100px;
+}
+
+.project-wrapper h3 {
+
+  font-size: 2rem;
+
+  margin-bottom: 25px;
+
+  color: white;
+}

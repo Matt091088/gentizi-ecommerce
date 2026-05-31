@@ -1,0 +1,239 @@
+/* =========================
+   SECCIÓN GENERAL
+========================= */
+
+.categories {
+
+  /* Espaciado arriba/abajo y laterales */
+  padding: 80px 8%;
+
+  /* Fondo oscuro de la sección */
+  background: #111;
+}
+
+
+/* =========================
+   HEADER / TÍTULO
+========================= */
+
+.categories-header {
+
+  /* Centra el texto */
+  text-align: center;
+
+  /* Espacio debajo del título */
+  margin-bottom: 50px;
+}
+
+.categories-header span {
+
+  /* Color dorado */
+  color: #c8a94d;
+
+  /* Separación entre letras */
+  letter-spacing: 3px;
+
+  font-weight: bold;
+}
+
+.categories-header h2 {
+
+  color: white;
+
+  font-size: 3rem;
+
+  margin-top: 15px;
+}
+
+
+/* =========================
+   CARD DE CATEGORÍA
+========================= */
+
+.category-card {
+
+  position: relative;
+
+  /* Altura fija */
+  height: 360px;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+.category-card img {
+
+  width: 100%;
+
+  height: 100%;
+
+  /* Hace que la imagen cubra toda la card */
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================
+   OVERLAY OSCURO
+========================= */
+
+.category-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  /* Gradiente oscuro para leer el texto */
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.15)
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  padding: 25px;
+}
+
+
+/* =========================
+   TEXTO DE LA CARD
+========================= */
+
+.category-overlay h3 {
+
+  color: white;
+
+  font-size: 2rem;
+
+  margin-bottom: 8px;
+}
+
+.category-overlay span {
+
+  color: #c8a94d;
+}
+
+
+/* =========================
+   SWIPER DESKTOP
+========================= */
+
+.swiper {
+
+  /* Hace que el carrusel use TODO el ancho */
+  width: 100vw !important;
+
+  /* Centra el swiper respecto a la pantalla */
+  margin-left: calc(-50vw + 50%);
+
+  /* Espaciado interno */
+  padding: 0 40px 50px;
+
+  overflow: visible;
+}
+
+
+/* Wrapper interno del swiper */
+.swiper-wrapper {
+
+  width: 100%;
+}
+
+
+/* Cada slide */
+.swiper-slide {
+
+  height: auto;
+}
+
+
+/* =========================
+   PAGINATION / PUNTITOS
+========================= */
+
+.swiper-pagination {
+
+  /* Baja un poco los puntos */
+  bottom: 0 !important;
+}
+
+
+/* Puntitos normales */
+.swiper-pagination-bullet {
+
+  background: rgba(255,255,255,0.6) !important;
+
+  opacity: 1 !important;
+
+  width: 10px !important;
+
+  height: 10px !important;
+}
+
+
+/* Puntito activo */
+.swiper-pagination-bullet-active {
+
+  background: #c8a94d !important;
+
+  transform: scale(1.2);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .categories {
+
+    /* Menos padding en celular */
+    padding: 70px 5%;
+  }
+
+  .categories-header h2 {
+
+    font-size: 2.2rem;
+  }
+
+  .category-card {
+
+    /* Card más baja */
+    height: 300px;
+  }
+
+  .category-card img {
+
+    /* Centra mejor la imagen en mobile */
+    object-fit: cover;
+
+    object-position: center;
+  }
+
+  .swiper {
+
+    /* En mobile vuelve al ancho normal */
+    width: 100% !important;
+
+    margin-left: 0;
+
+    padding: 0 0 50px;
+
+    overflow: hidden;
+  }
+}

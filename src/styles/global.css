@@ -1,0 +1,578 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+
+  /* Fuente */
+  font-family: Arial, sans-serif;
+
+  /* Color de fondo */
+  background-color: #f5f5f5;
+
+  /* Color del texto */
+  color: #222;
+}
+
+/* Navbar */
+nav {
+
+  /* Espaciado interno */
+  padding: 20px;
+
+  /* Fondo blanco */
+  background-color: white;
+
+  /* Línea abajo */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hero */
+section {
+
+  /* Espaciado */
+  padding: 60px 20px;
+}
+
+/* Título hero */
+h2 {
+
+  font-size: 42px;
+
+  margin-bottom: 20px;
+}
+
+/* Texto */
+p {
+
+  margin-bottom: 20px;
+
+  max-width: 600px;
+}
+
+/* Botón */
+button {
+
+  padding: 12px 20px;
+
+  border: none;
+
+  background-color: black;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* Cards */
+div {
+
+  margin-bottom: 20px;
+}
+
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  /* Altura grande */
+  height: 80vh;
+
+  /* Centra contenido */
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 60px;
+
+  background-color: #ececec;
+}
+
+/* Contenido hero */
+.hero-content {
+
+  max-width: 600px;
+}
+
+/* Título hero */
+.hero h2 {
+
+  font-size: 60px;
+
+  margin-bottom: 20px;
+}
+
+/* Texto hero */
+.hero p {
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+
+  display: grid;
+
+  /* 4 columnas */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  padding: 60px;
+}
+
+/* Card categoría */
+.category-card {
+
+  background-color: white;
+
+  padding: 40px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+.category-card:hover {
+
+  transform: translateY(-5px);
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  padding: 60px;
+}
+
+/* Card producto */
+.product-card {
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  padding-bottom: 20px;
+}
+
+/* Imagen falsa */
+/* Imagen producto */
+.product-image {
+
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+
+/* Título producto */
+.product-card h3 {
+
+  padding: 20px 20px 10px;
+}
+
+/* Precio */
+.product-card p {
+
+  padding: 0 20px;
+
+  font-weight: bold;
+}
+
+/* Botón producto */
+.product-card button {
+
+  margin-left: 20px;
+
+  margin-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  /* Navbar */
+  .navbar {
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  /* Hero */
+  .hero {
+
+    padding: 40px 20px;
+
+    height: auto;
+  }
+
+  /* Título hero */
+  .hero h2 {
+
+    font-size: 40px;
+  }
+
+  /* Categories */
+  .categories {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px;
+  }
+
+  /* Products */
+  .products {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  /* Menú */
+  .nav-links {
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  /* Hero */
+  .hero h2 {
+
+    font-size: 32px;
+  }
+
+  /* Categories */
+  .categories {
+
+    grid-template-columns: 1fr;
+  }
+
+  /* Products */
+  .products {
+
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   BADGE NUEVO
+========================= */
+
+.product-card {
+
+  position: relative;
+}
+
+/* Badge */
+.new-badge {
+
+  position: absolute;
+
+  top: 15px;
+
+  left: 15px;
+
+  background-color: black;
+
+  color: white;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+/* Fondo oscuro */
+.modal-overlay {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.5);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* Caja modal */
+.modal {
+
+  background-color: white;
+
+  padding: 40px;
+
+  border-radius: 10px;
+
+  width: 300px;
+
+  text-align: center;
+}
+
+/* Imagen modal */
+.modal-image {
+
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+/* Botones modal */
+.modal button {
+
+  margin: 10px;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-radius: 6px;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 40px 0;
+}
+
+/* Input buscador */
+.search-container input {
+
+  width: 320px;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+/* Focus input */
+.search-container input:focus {
+
+  border-color: black;
+}
+
+/* =========================
+   PRODUCT CARDS PREMIUM
+========================= */
+
+/* Grid productos */
+.products {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 30px;
+
+  padding: 40px;
+}
+
+/* Card */
+.product-card {
+
+  background-color: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover card */
+.product-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor imagen */
+.image-container {
+
+  overflow: hidden;
+}
+
+/* Imagen */
+.product-image {
+
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+/* Zoom imagen */
+.product-card:hover .product-image {
+
+  transform: scale(1.05);
+}
+
+/* Info */
+.product-info {
+
+  padding: 20px;
+}
+
+/* Título */
+.product-info h3 {
+
+  font-size: 22px;
+
+  margin-bottom: 10px;
+}
+
+/* Precio */
+.product-price {
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+/* Tiempo entrega */
+.delivery-time {
+
+  color: gray;
+
+  margin-bottom: 20px;
+}
+
+/* Botón */
+.product-info button {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: black;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover botón */
+.product-info button:hover {
+
+  background-color: #333;
+}
+
+/* Badge nuevo */
+.new-badge {
+
+  position: absolute;
+
+  margin: 15px;
+
+  background-color: black;
+
+  color: white;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  z-index: 10;
+}
+
+html {
+
+  scroll-behavior: smooth;
+}

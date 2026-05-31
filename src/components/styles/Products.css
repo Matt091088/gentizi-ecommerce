@@ -1,0 +1,7 @@
+.products {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  background: #f7f7f7;
+}

@@ -1,0 +1,126 @@
+.custom-section {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 60px;
+
+  padding: 100px 40px;
+
+  background: #f8f8f8;
+
+  flex-wrap: wrap;
+}
+
+/* Imagen */
+.custom-image {
+
+  flex: 1;
+}
+
+.custom-image img {
+
+  width: 100%;
+
+  border-radius: 28px;
+
+  object-fit: cover;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Texto */
+.custom-content {
+
+  flex: 1;
+}
+
+.custom-content span {
+
+  color: #c8a94d;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.custom-content h2 {
+
+  font-size: 3rem;
+
+  margin: 25px 0;
+
+  color: #111;
+
+  line-height: 1.1;
+}
+
+.custom-content p {
+
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+/* Lista */
+.custom-content ul {
+
+  margin-bottom: 35px;
+}
+
+.custom-content li {
+
+  margin-bottom: 14px;
+
+  color: #333;
+
+  list-style: none;
+
+  font-weight: 500;
+}
+
+/* Botón */
+.custom-button {
+
+  padding: 18px 34px;
+
+  border: none;
+
+  background: black;
+
+  color: white;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.custom-button:hover {
+
+  background: #c8a94d;
+
+  color: black;
+
+  transform: translateY(-4px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .custom-section {
+
+    padding: 70px 20px;
+  }
+
+  .custom-content h2 {
+
+    font-size: 2.2rem;
+  }
+}
