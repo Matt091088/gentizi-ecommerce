@@ -309,4 +309,46 @@
     display: flex;
   }
 
+  .nav-links {
+
+  position: absolute;
+
+  top: 100%;
+
+  right: 0;
+
+  background: rgba(0,0,0,0.9);
+
+  width: 250px;
+
+  flex-direction: column;
+
+  padding: 30px;
+
+  display: none;
+
+  list-style: none;   /* ← agregar */
+
+  margin: 0;          /* ← agregar */
+
+}
+
+.navbar {
+
+  display: flex;
+
+  flex-direction: row;
+}
+
+.nav-actions {
+
+  display: flex;
+
+  flex-direction: row;
+}
+
+.nav-links {
+
+  display: none;
+}
 }
