@@ -72,12 +72,12 @@ function Footer() {
   </span>
 
   <a
-    href="https://matt091088.github.io/portfolio/"
+    href="https://fernando-portfolio-ruby.vercel.app/"
     target="_blank"
     rel="noreferrer"
   >
 
-    Desarrollado por Fernando M. Tau
+    Sitio Desarrollado por Fernando M. Tau
 
   </a>
 

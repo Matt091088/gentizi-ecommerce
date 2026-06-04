@@ -18,6 +18,48 @@ body {
   color: #222;
 }
 
+.cart-notification {
+
+  position: fixed;
+
+  top: 160px;
+
+  right: 30px;
+
+  background: #25D366;
+
+  color: white;
+
+  padding: 16px 24px;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+  z-index: 9999;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateX(50px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
 /* Navbar */
 nav {
 
@@ -69,10 +111,6 @@ button {
 }
 
 /* Cards */
-div {
-
-  margin-bottom: 20px;
-}
 
 
 
@@ -159,20 +197,6 @@ div {
   transform: translateY(-5px);
 }
 
-/* =========================
-   PRODUCTS
-========================= */
-
-.products {
-
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 20px;
-
-  padding: 60px;
-}
 
 /* Card producto */
 .product-card {
@@ -434,17 +458,7 @@ div {
    PRODUCT CARDS PREMIUM
 ========================= */
 
-/* Grid productos */
-.products {
 
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-  gap: 30px;
-
-  padding: 40px;
-}
 
 /* Card */
 .product-card {

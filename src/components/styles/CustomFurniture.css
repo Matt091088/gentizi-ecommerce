@@ -1,4 +1,4 @@
-.custom-section {
+.custom-furniture {
 
   display: flex;
 
@@ -110,11 +110,17 @@
 
   transform: translateY(-4px);
 }
+.custom-content {
+
+  flex: 1;
+
+  max-width: 600px;
+}
 
 /* Mobile */
 @media (max-width: 768px) {
 
-  .custom-section {
+  .custom-furniture {
 
     padding: 70px 20px;
   }
@@ -123,4 +129,24 @@
 
     font-size: 2.2rem;
   }
+
+  @media (max-width: 768px) {
+
+  .custom-furniture {
+
+    padding: 70px 20px;
+
+    text-align: center;
+  }
+
+  .custom-content {
+
+    max-width: 100%;
+  }
+
+  .custom-content ul {
+
+    padding: 0;
+  }
+}
 }

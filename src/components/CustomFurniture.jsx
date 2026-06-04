@@ -1,4 +1,5 @@
 import "./styles/CustomFurniture.css";
+import categoriaCocinas from '../assets/images/categoria-cocinas.jpg'
 
 function CustomFurniture() {
 
@@ -13,9 +14,9 @@ function CustomFurniture() {
       <div className="custom-image">
 
         <img
-          src="https://images.unsplash.com/photo-1616594039964-3d4d0dca2d3f?q=80&w=1200&auto=format&fit=crop"
-          alt="Custom Furniture"
-        />
+  src={categoriaCocinas}
+  alt="Cocinas a medida Gentizi"
+/>
 
       </div>
 
@@ -65,7 +66,7 @@ function CustomFurniture() {
           }
         >
 
-          Solicitar Presupuesto
+          Consultar por Whatsapp
 
         </button>
 

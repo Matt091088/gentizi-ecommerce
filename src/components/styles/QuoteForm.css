@@ -1,0 +1,107 @@
+.quote-form {
+
+  padding: 140px 8%;
+
+  background: #151515;
+
+  color: white;
+}
+
+.quote-container {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.quote-container span {
+
+  color: #c8a94d;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.quote-container h2 {
+
+  text-align: center;
+
+  font-size: 3rem;
+
+  margin: 0;
+}
+
+.quote-container p {
+
+  text-align: center;
+
+  color: rgba(255,255,255,0.7);
+
+  margin-bottom: 20px;
+}
+
+.quote-container input,
+.quote-container textarea {
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid #333;
+
+  background: #1f1f1f;
+
+  color: white;
+
+  font-size: 1rem;
+
+  outline: none;
+}
+
+.quote-container textarea {
+
+  resize: none;
+}
+
+.quote-container button {
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #25D366;
+
+  color: white;
+
+  font-weight: bold;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.quote-container button:hover {
+
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .quote-container h2 {
+
+    font-size: 2rem;
+  }
+}

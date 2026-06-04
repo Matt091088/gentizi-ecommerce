@@ -21,8 +21,6 @@ function ProductCard({
 
         setSelectedProduct(product);
 
-        setQuickViewProduct(product);
-
         window.scrollTo({
 
           top: 0,
@@ -37,44 +35,54 @@ function ProductCard({
       {/* Imagen */}
       <div className="product-image-container">
 
+        {product.featured && (
+
+          <div className="featured-badge">
+
+            ⭐ Más vendido
+
+          </div>
+
+        )}
+
         <img
           src={product.image}
           alt={product.title}
         />
 
-        {/* Overlay */}
-        <div className="product-overlay">
+      </div>
 
-          <button
-            onClick={(e) => {
+      {/* Overlay */}
+      <div className="product-overlay">
 
-              e.stopPropagation();
+        <button
+          onClick={(e) => {
 
-              addToCart(product);
+            e.stopPropagation();
 
-            }}
-          >
+            addToCart(product);
 
-            Agregar
+          }}
+        >
 
-          </button>
+          Agregar
 
-        </div>
-
-        {/* Badge */}
-        {product.isNew && (
-
-          <span className="product-badge">
-
-            NUEVO
-
-          </span>
-
-        )}
+        </button>
 
       </div>
 
-      {/* Info */}
+      {/* Badge Nuevo */}
+      {product.isNew && (
+
+        <span className="product-badge">
+
+          NUEVO
+
+        </span>
+
+      )}
+
+      {/* Información */}
       <div className="product-info">
 
         <span className="product-category">

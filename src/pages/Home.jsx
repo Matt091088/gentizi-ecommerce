@@ -14,6 +14,9 @@ import Testimonials from '../components/Testimonials'
 
 import BeforeAfter from '../components/BeforeAfter'
 
+import QuoteForm from '../components/QuoteForm'
+
+import WorkProcess from '../components/WorkProcess'
 
 function Home({
 
@@ -58,9 +61,13 @@ function Home({
 
       <CustomFurniture />
 
+      <WorkProcess />
+
       <Testimonials />
 
       <BeforeAfter />
+
+      <QuoteForm />
 
     </>
   )

@@ -166,3 +166,26 @@
 
   font-size: 1.1rem;
 }
+
+.featured-badge {
+
+  position: absolute;
+
+  top: 60px;
+
+  left: 15px;
+
+  z-index: 20;
+
+  background: #ffb400;
+
+  color: #111;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 0.8rem;
+
+  font-weight: bold;
+}

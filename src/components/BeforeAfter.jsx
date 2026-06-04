@@ -196,30 +196,28 @@ onTouchMove={(e) => {
 }}
             >
 
-              {/* Antes */}
-              <img
-                src={project.before}
-                alt="Antes"
-                className="comparison-image"
-              />
-
               {/* Después */}
-              <div
+<img
+  src={project.after}
+  alt="Después"
+  className="comparison-image"
+/>
 
-                className="after-image-wrapper"
+{/* Antes */}
+<div
+  className="after-image-wrapper"
+  style={{
+    width: `${sliderPosition}%`
+  }}
+>
 
-                style={{
-                  width: `${sliderPosition}%`
-                }}
-              >
+  <img
+    src={project.before}
+    alt="Antes"
+    className="comparison-image"
+  />
 
-                <img
-                  src={project.after}
-                  alt="Después"
-                  className="comparison-image"
-                />
-
-              </div>
+</div>
 
               {/* Línea */}
               <div

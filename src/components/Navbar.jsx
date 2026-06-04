@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './styles/Navbar.css'
 import logo from '../assets/images/logo.webp'
+import { Link } from 'react-router-dom'
 
 // Componente Navbar
 function Navbar({
@@ -21,23 +22,29 @@ function Navbar({
   // Abre/cierra menú
   function toggleMenu() {
 
-    setMenuOpen(!menuOpen)
-  }
+  console.log("click hamburguesa")
+
+  setMenuOpen(!menuOpen)
+}
 
   return (
 
     <nav className="navbar">
 
       {/* Logo */}
-      <div className="logo-container">
 
-        <img
-          src={logo}
-          alt="Gentizi Muebles"
-          className="logo-image"
-        />
+<Link
+  to="/"
+  className="logo-container"
+>
 
-      </div>
+  <img
+    src={logo}
+    alt="Gentizi Muebles"
+    className="logo-image"
+  />
+
+</Link>
 
       {/* Buscador */}
       <input
@@ -72,30 +79,20 @@ function Navbar({
 
         <li>
 
-  <a href="#inicio">
-
-    Inicio
-
-  </a>
+  <a href="/#inicio">Inicio</a>
 
 </li>
 
          <li>
-  <a href="#productos">
-    Productos
-  </a>
+  <a href="/#productos">Productos</a>
 </li>
 
 <li>
-  <a href="#nosotros">
-    Nosotros
-  </a>
+  <a href="/#nosotros">Nosotros</a>
 </li>
 
 <li>
-  <a href="#contacto">
-    Contacto
-  </a>
+  <a href="/#contacto">Contacto</a>
 </li>
 
       </ul>

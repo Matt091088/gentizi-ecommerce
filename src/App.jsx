@@ -1,5 +1,5 @@
 // Importa useState
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 // Importa componentes
@@ -34,17 +34,64 @@ function App() {
   const [cartCount, setCartCount] = useState(0)
 
   // Productos carrito
-  const [cartItems, setCartItems] = useState([])
+  const [cartItems, setCartItems] = useState(() => {
 
-  // Categoría seleccionada
-  const [selectedCategory, setSelectedCategory] = useState('Todos')
+  const savedCart = localStorage.getItem('gentizi-cart')
+
+  return savedCart
+
+    ? JSON.parse(savedCart)
+
+    : []
+
+})
+
+  const [selectedCategory, setSelectedCategory] =
+  useState('')
 
   // Texto búsqueda
   const [searchText, setSearchText] = useState('')
 
+  const [showNotification, setShowNotification] =
+  useState(false)
+
+ useEffect(() => {
+
+  const totalItems = cartItems.reduce(
+
+    (total, item) => total + item.quantity,
+
+    0
+
+  )
+
+  setCartCount(totalItems)
+
+}, [cartItems])
+
+/* Guardar carrito automáticamente */
+useEffect(() => {
+
+  localStorage.setItem(
+
+    'gentizi-cart',
+
+    JSON.stringify(cartItems)
+
+  )
+
+}, [cartItems])
+
   // Agrega productos carrito
    function addToCart(product) {
 
+    setShowNotification(true)
+
+setTimeout(() => {
+
+  setShowNotification(false)
+
+}, 2500)
   const existingProduct = cartItems.find(
     (item) => item.id === product.id
   );
@@ -150,7 +197,7 @@ function decreaseQuantity(id) {
 
 />
 
-      {/* Carrito */}
+
 {/* Carrito */}
 <Cart
 
@@ -167,6 +214,7 @@ function decreaseQuantity(id) {
 />
 
 {/* Quick View */}
+{/*
 {quickViewProduct && (
 
   <QuickView
@@ -181,8 +229,18 @@ function decreaseQuantity(id) {
 
   />
 
-)}
+)} */}
 
+
+{showNotification && (
+
+  <div className="cart-notification">
+
+    ✅ Producto agregado al carrito
+
+  </div>
+
+)}
 
       <Routes>
 
@@ -245,6 +303,9 @@ function decreaseQuantity(id) {
 />
 
 </Routes>
+
+<Footer />
+<WhatsappButton />
 
     </>
 
