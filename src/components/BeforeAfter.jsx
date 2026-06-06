@@ -32,11 +32,11 @@ function BeforeAfter() {
 
   const projects = [
 
-    {
-      before: before1,
-      after: after1,
-      title: 'Cocina Moderna'
-    },
+   {
+  before: before1,
+  after: after1,
+  title: 'Cocina Moderna'
+},
 
     {
       before: before2,

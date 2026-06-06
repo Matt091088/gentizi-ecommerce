@@ -50,7 +50,8 @@
 }
 
 .quote-container input,
-.quote-container textarea {
+.quote-container textarea,
+.quote-container select {
 
   padding: 18px;
 
@@ -65,6 +66,19 @@
   font-size: 1rem;
 
   outline: none;
+}
+
+.quote-container select {
+
+  cursor: pointer;
+}
+.quote-container select {
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
 }
 
 .quote-container textarea {

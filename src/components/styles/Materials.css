@@ -1,0 +1,176 @@
+/* =========================
+   MATERIALES
+========================= */
+
+.materials {
+
+  padding: 120px 8%;
+
+  background: #f8f8f8;
+}
+
+/* Cabecera */
+.materials-header {
+
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0 auto 60px;
+}
+
+.materials-header span {
+
+  color: #c8a94d;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+}
+
+.materials-header h2 {
+
+  font-size: 3rem;
+
+  margin: 20px 0;
+
+  color: #111;
+}
+
+.materials-header p {
+
+  color: #666;
+
+  line-height: 1.8;
+}
+
+/* Grid */
+.materials-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+}
+
+/* Tarjeta */
+.material-card {
+
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.material-card:hover {
+
+  transform: translateY(-8px);
+}
+
+/* Imagen */
+.material-card img {
+
+  width: 100%;
+
+  height: 250px;
+
+  object-fit: cover;
+}
+
+/* Nombre */
+.material-card h3 {
+
+  padding: 20px;
+
+  text-align: center;
+
+  color: #111;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .materials {
+
+    padding: 80px 20px;
+  }
+
+  .materials-header h2 {
+
+    font-size: 2rem;
+  }
+
+}
+
+/* Categoría */
+.material-category {
+
+  margin-bottom: 70px;
+}
+
+.material-category h3 {
+
+  font-size: 2rem;
+
+  color: #111;
+
+  margin-bottom: 25px;
+
+  border-left: 5px solid #c8a94d;
+
+  padding-left: 15px;
+}
+
+/* =========================
+   FILTROS
+========================= */
+
+.materials-filters {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-bottom: 50px;
+}
+
+.materials-filters button {
+
+  border: none;
+
+  padding: 12px 22px;
+
+  border-radius: 30px;
+
+  background: #e5e5e5;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  font-weight: 600;
+}
+
+.materials-filters button:hover {
+
+  transform: translateY(-2px);
+}
+
+.materials-filters button.active {
+
+  background: #c8a94d;
+
+  color: white;
+}

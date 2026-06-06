@@ -14,31 +14,51 @@ function QuoteForm() {
   /* Enviar a WhatsApp */
   function sendToWhatsapp() {
 
-    const text =
+  if (!name || !phone || !furniture) {
 
-`Hola Gentizi.
+    alert(
+      'Por favor completá nombre, teléfono y tipo de mueble.'
+    )
 
-Nombre: ${name}
+    return
+  }
 
-Teléfono: ${phone}
+  const text =
 
-Tipo de mueble: ${furniture}
+`Hola Gentizi 👋
 
-Medidas aproximadas: ${measurements}
+Quiero solicitar un presupuesto.
 
-Detalles:
+👤 Nombre: ${name}
 
-${message}`
+📞 Teléfono: ${phone}
 
-    const whatsappUrl =
+🪑 Tipo de mueble: ${furniture}
+
+📐 Medidas aproximadas: ${measurements}
+
+📝 Detalles:
+
+${message}
+
+Gracias.`
+
+  const whatsappUrl =
 
 `https://wa.me/543765253186?text=${encodeURIComponent(text)}`
 
-    window.open(
-      whatsappUrl,
-      '_blank'
-    )
-  }
+  window.open(
+    whatsappUrl,
+    '_blank'
+  )
+
+  /* Limpiar formulario */
+  setName('')
+  setPhone('')
+  setFurniture('')
+  setMeasurements('')
+  setMessage('')
+}
 
   return (
 
@@ -100,19 +120,52 @@ ${message}`
         />
 
         {/* Tipo mueble */}
-        <input
+         <select
 
-          type="text"
+  value={furniture}
 
-          placeholder="Ej: Cocina, Placard, Rack TV"
+  onChange={(e) =>
+    setFurniture(e.target.value)
+  }
 
-          value={furniture}
+>
 
-          onChange={(e) =>
-            setFurniture(e.target.value)
-          }
+  <option value="">
+  Seleccioná el tipo de mueble
+</option>
 
-        />
+  <option value="Cocina">
+
+    Cocina
+
+  </option>
+
+  <option value="Placard">
+
+    Placard
+
+  </option>
+
+  <option value="Vestidor">
+
+    Vestidor
+
+  </option>
+
+  <option value="Panel TV">
+
+    Panel TV
+
+  </option>
+
+  <option value="Otro">
+
+    Otro
+
+  </option>
+
+</select>
+
 
         {/* Medidas */}
         <input

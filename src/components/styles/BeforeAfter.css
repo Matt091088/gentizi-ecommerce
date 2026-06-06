@@ -60,7 +60,7 @@
 
   max-width: 1400px;
 
-  height: 700px;
+  height: 1000px;
 
   margin: auto;
 
@@ -73,17 +73,6 @@
   box-shadow: 0 25px 60px rgba(0,0,0,0.45);
 }
 
-/* Imagen */
-.comparison-image {
-
-  width: 100%;
-
-  height: 100%;
-
-  object-fit: cover;
-}
-
-/* Imagen después */
 .after-image-wrapper {
 
   position: absolute;
@@ -98,6 +87,16 @@
 
   overflow: hidden;
 }
+
+/* Imagen */
+.comparison-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 
 /* Línea */
 .comparison-line {

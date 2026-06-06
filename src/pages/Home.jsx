@@ -18,6 +18,8 @@ import QuoteForm from '../components/QuoteForm'
 
 import WorkProcess from '../components/WorkProcess'
 
+import Materials from '../components/Materials'
+
 function Home({
 
   addToCart,
@@ -64,6 +66,8 @@ function Home({
       <WorkProcess />
 
       <Testimonials />
+
+      <Materials />
 
       <BeforeAfter />
 
