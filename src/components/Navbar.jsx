@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './styles/Navbar.css'
 import logo from '../assets/images/logo.webp'
 import { Link } from 'react-router-dom'
@@ -19,6 +19,39 @@ function Navbar({
   // State menú móvil
   const [menuOpen, setMenuOpen] = useState(false)
 
+const [scrolled, setScrolled] = useState(false)
+
+ useEffect(() => {
+
+  function handleScroll() {
+
+    console.log(
+      'scroll:',
+      window.scrollY
+    )
+
+    setScrolled(
+      window.scrollY > 50
+    )
+
+  }
+
+  window.addEventListener(
+    'scroll',
+    handleScroll
+  )
+
+  return () => {
+
+    window.removeEventListener(
+      'scroll',
+      handleScroll
+    )
+
+  }
+
+}, [])
+
   // Abre/cierra menú
   function toggleMenu() {
 
@@ -29,7 +62,13 @@ function Navbar({
 
   return (
 
-    <nav className="navbar">
+   <nav
+  className={
+    scrolled
+      ? 'navbar scrolled'
+      : 'navbar'
+  }
+>
 
       {/* Logo */}
 

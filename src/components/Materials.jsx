@@ -358,6 +358,38 @@ MaderasClasicas: [
 
   const [activeCategory, setActiveCategory] =
     useState('Mesopotamia')
+    const [selectedMaterial, setSelectedMaterial] =
+  useState(null)
+
+  const categoryDescriptions = {
+
+  Mesopotamia:
+    'Inspirada en especies y colores de la región mesopotámica.',
+
+  Nature:
+    'Texturas que reproducen la apariencia natural de la madera.',
+
+  Lisos:
+    'Diseños modernos y versátiles para cualquier ambiente.',
+
+  Hilados:
+    'Superficies con apariencia textil y tejidos suaves.',
+
+  Blend:
+    'Combinación de tonos contemporáneos y naturales.',
+
+  UrbanConcept:
+    'Inspirada en materiales urbanos como piedra y cemento.',
+
+  Etnica:
+    'Diseños con identidad y carácter artesanal.',
+
+  Nordica:
+    'Tonos claros inspirados en el diseño escandinavo.',
+
+  MaderasClasicas:
+    'Maderas tradicionales con acabados atemporales.'
+}
 
   return (
 
@@ -424,9 +456,15 @@ MaderasClasicas: [
         {categories[activeCategory].map((material) => (
 
           <div
-            className="material-card"
-            key={material.name}
-          >
+  className="material-card"
+  key={material.name}
+  onClick={() =>
+    setSelectedMaterial({
+      ...material,
+      category: activeCategory
+    })
+  }
+>
 
             <img
               src={material.image}
@@ -444,6 +482,72 @@ MaderasClasicas: [
         ))}
 
       </div>
+
+      {selectedMaterial && (
+
+  <div
+    className="material-modal"
+    onClick={() =>
+      setSelectedMaterial(null)
+    }
+  >
+
+    <div
+      className="material-modal-content"
+      onClick={(e) =>
+        e.stopPropagation()
+      }
+    >
+
+      <button
+        className="close-modal"
+        onClick={() =>
+          setSelectedMaterial(null)
+        }
+      >
+
+        ✕
+
+      </button>
+
+      <img
+        src={selectedMaterial.image}
+        alt={selectedMaterial.name}
+      />
+
+      <h3>
+
+  {selectedMaterial.name}
+
+</h3>
+
+<span className="material-line">
+
+  Línea {selectedMaterial.category}
+
+</span>
+
+<div className="material-divider"></div>
+
+<p className="material-description">
+
+  {
+    categoryDescriptions[
+      selectedMaterial.category
+    ]
+  }
+
+</p>
+
+      
+
+  
+
+    </div>
+
+  </div>
+
+)}
 
     </section>
 
