@@ -72,14 +72,31 @@ function AboutGentizi() {
 
         <p>
 
-          En un pequeño espacio de
-          apenas 3x5 metros, con muy
-          pocas herramientas, un cutter
-          y un taladro usado, nacieron
-          los primeros racks y paneles
-          de TV.
+         En un pequeño espacio de
+         apenas 3x5 metros, con muy
+         pocas herramientas, un cutter
+         y un taladro usado, nacieron
+         los primeros racks y paneles
+         de TV.
 
         </p>
+
+        <div className="history-photo">
+
+  <img
+    src="/public/comienzo-taller.jpg"
+    alt="Primer taller de Gentizi"
+  />
+
+  <span>
+
+    Primer taller de Gentizi.
+    Aquí comenzaron los primeros proyectos.
+
+  </span>
+
+</div>
+
 
         <p>
 

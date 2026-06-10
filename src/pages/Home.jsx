@@ -20,6 +20,8 @@ import WorkProcess from '../components/WorkProcess'
 
 import Materials from '../components/Materials'
 
+import Projects from "../components/Projects";
+
 function Home({
 
   addToCart,
@@ -55,6 +57,7 @@ function Home({
 
         setQuickViewProduct={setQuickViewProduct}
       />
+      <Projects />
 
       {/* Secciones extras */}
       <WhyChooseUs />

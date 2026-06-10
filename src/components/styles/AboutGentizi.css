@@ -32,6 +32,8 @@
   max-width: 900px;
 
   color: white;
+
+  margin: 0 auto;
 }
 
 .about-tag {
@@ -47,24 +49,24 @@
 
 .about-content h2 {
 
-  font-size: 4rem;
+  font-size: 4.5rem;
 
   line-height: 1.1;
 
-  margin: 25px 0;
+  margin: 20px 0 40px;
 }
 
 .about-content p {
 
-  color: rgba(255,255,255,0.8);
+  max-width: 800px;
 
-  line-height: 1.9;
+  color: rgba(255,255,255,0.85);
 
-  font-size: 1.1rem;
+  line-height: 2;
 
-  margin-bottom: 25px;
+  font-size: 1.15rem;
 
-  max-width: 750px;
+  margin-bottom: 28px;
 }
 
 .about-stats {
@@ -105,4 +107,47 @@
 
     gap: 30px;
   }
+}
+
+/* =========================
+   FOTO HISTORIA
+========================= */
+
+.history-photo {
+
+  margin: 60px 0;
+
+  text-align: center;
+}
+
+.history-photo img {
+
+  width: 100%;
+
+  max-width: 800px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.history-photo img:hover {
+
+  transform: scale(1.02);
+}
+
+.history-photo span {
+
+  display: block;
+
+  margin-top: 15px;
+
+  color: #c8c8c8;
+
+  font-size: 0.95rem;
+
+  font-style: italic;
 }
