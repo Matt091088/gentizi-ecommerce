@@ -15,21 +15,21 @@ function Projects() {
 
       images: [
 
-        '/public/projects/joyeria/joyeria1.jpg',
+        '/projects/joyeria/joyeria1.jpg',
 
-        '/public/projects/joyeria/joyeria2.jpg',
+        '/projects/joyeria/joyeria2.jpg',
 
-        '/public/projects/joyeria/joyeria3.jpg',
+        '/projects/joyeria/joyeria3.jpg',
 
-        '/public/projects/joyeria/joyeria4.jpg',
+        '/projects/joyeria/joyeria4.jpg',
 
-        '/public/projects/joyeria/joyeria5.jpg',
+        '/projects/joyeria/joyeria5.jpg',
 
-        '/public/projects/joyeria/joyeria6.jpg',
+        '/projects/joyeria/joyeria6.jpg',
 
-        '/public/projects/joyeria/joyeria7.jpg',
+        '/projects/joyeria/joyeria7.jpg',
 
-        '/public/projects/joyeria/joyeria8.jpg'
+        '/projects/joyeria/joyeria8.jpg'
 
       ]
 
@@ -46,13 +46,13 @@ OficinaHotel: {
 
   images: [
 
-    '/public/projects/oficinahotel/oficinahotel1.jpg',
+    '/projects/oficinahotel/oficinahotel1.jpg',
 
-    '/public/projects/oficinahotel/oficinahotel2.jpg',
+    '/projects/oficinahotel/oficinahotel2.jpg',
 
-    '/public/projects/oficinahotel/oficinahotel3.jpg',
+    '/projects/oficinahotel/oficinahotel3.jpg',
 
-    '/public/projects/oficinahotel/oficinahotel4.jpg'
+    '/projects/oficinahotel/oficinahotel4.jpg'
 
   ]
 
@@ -67,15 +67,15 @@ LocalComercial: {
 
   images: [
 
-    '/public/projects/localcomercial/localcomercial1.jpg',
+    '/projects/localcomercial/localcomercial1.jpg',
 
-    '/public/projects/localcomercial/localcomercial2.jpg',
+    '/projects/localcomercial/localcomercial2.jpg',
 
-    '/public/projects/localcomercial/localcomercial3.jpg',
+    '/projects/localcomercial/localcomercial3.jpg',
 
-    '/public/projects/localcomercial/localcomercial4.jpg',
+    '/projects/localcomercial/localcomercial4.jpg',
 
-    '/public/projects/localcomercial/localcomercial5.jpg'
+    '/projects/localcomercial/localcomercial5.jpg'
 
   ]
 
@@ -90,11 +90,11 @@ PuertasColgantes: {
 
   images: [
 
-    '/public/projects/puertascolgantes/puertascolgante1.jpg',
+    '/projects/puertascolgantes/puertascolgante1.jpg',
 
-    '/public/projects/puertascolgantes/puertascolgante2.jpg',
+    '/projects/puertascolgantes/puertascolgante2.jpg',
 
-    '/public/projects/puertascolgantes/puertascolgante3.jpg'
+    '/projects/puertascolgantes/puertascolgante3.jpg'
 
   ]
 
@@ -106,7 +106,7 @@ PuertasColgantes: {
     useState('Joyeria')
 
   const [selectedImage, setSelectedImage] =
-    useState('/public/projects/joyeria/joyeria1.jpg')
+    useState('/projects/joyeria/joyeria1.jpg')
 
   return (
 
