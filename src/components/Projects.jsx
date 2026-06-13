@@ -108,6 +108,9 @@ PuertasColgantes: {
   const [selectedImage, setSelectedImage] =
     useState('/projects/joyeria/joyeria1.jpg')
 
+    const [fullscreen, setFullscreen] =
+  useState(false)
+
   return (
 
     <section
@@ -181,14 +184,55 @@ PuertasColgantes: {
 
         <div className="main-image">
 
-          <img
-            src={selectedImage}
-            alt={
-              projects[activeProject].title
-            }
-          />
+  <button
+    className="arrow left"
+    onClick={() => {
 
-        </div>
+      const currentIndex =
+        projects[activeProject].images.indexOf(selectedImage)
+
+      const prevIndex =
+        currentIndex === 0
+          ? projects[activeProject].images.length - 1
+          : currentIndex - 1
+
+      setSelectedImage(
+        projects[activeProject].images[prevIndex]
+      )
+
+    }}
+  >
+    ❮
+  </button>
+
+  <img
+  src={selectedImage}
+  alt={projects[activeProject].title}
+  onClick={() => setFullscreen(true)}
+/>
+
+  <button
+    className="arrow right"
+    onClick={() => {
+
+      const currentIndex =
+        projects[activeProject].images.indexOf(selectedImage)
+
+      const nextIndex =
+        currentIndex === projects[activeProject].images.length - 1
+          ? 0
+          : currentIndex + 1
+
+      setSelectedImage(
+        projects[activeProject].images[nextIndex]
+      )
+
+    }}
+  >
+    ❯
+  </button>
+
+</div>
 
         <div className="thumbnails">
 
@@ -219,6 +263,29 @@ PuertasColgantes: {
         </div>
 
       </div>
+
+      {fullscreen && (
+
+  <div
+    className="fullscreen-overlay"
+    onClick={() => setFullscreen(false)}
+  >
+
+    <button
+      className="close-fullscreen"
+    >
+      ✕
+    </button>
+
+    <img
+      src={selectedImage}
+      alt=""
+      className="fullscreen-image"
+    />
+
+  </div>
+
+)}
 
     </section>
 

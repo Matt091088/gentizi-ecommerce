@@ -177,9 +177,8 @@
 
   z-index: 20;
 
-  background: #ffb400;
-
-  color: #111;
+  background: rgba(0,0,0,0.85);
+color: #c8a94d;
 
   padding: 8px 14px;
 
