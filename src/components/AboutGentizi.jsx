@@ -84,7 +84,7 @@ function AboutGentizi() {
         <div className="history-photo">
 
   <img
-    src="/public/comienzo-taller.jpg"
+    src="/comienzo-taller.jpg"
     alt="Primer taller de Gentizi"
   />
 
