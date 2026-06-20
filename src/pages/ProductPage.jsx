@@ -25,10 +25,10 @@ function ProductPage({ addToCart }) {
 
   )
 
-  /* Si no encuentra producto */
-  if (!product) {
 
-    return (
+if (!product) {
+
+  return (
 
       <h1
         style={{
@@ -55,6 +55,11 @@ function ProductPage({ addToCart }) {
 
   ).slice(0, 3)
 
+
+  const [selectedColor, setSelectedColor] = useState(
+  product?.colors?.[0] || ''
+)
+
     /* Imagen seleccionada */
 const [selectedImage, setSelectedImage] = useState(
 
@@ -65,9 +70,21 @@ const [selectedImage, setSelectedImage] = useState(
     : product.image
 )
 
+/* ========================= */
+/* CANTIDAD DEL PRODUCTO     */
+/* ========================= */
+
+const [quantity, setQuantity] = useState(1)
+
    const whatsappMessage =
 
-  `Hola, me interesa el producto ${product.title}.
+`Hola, me interesa el producto:
+
+${product.title}
+
+Terminación elegida:
+${selectedColor}
+
 ¿Podrían enviarme más información?`
 
   return (
@@ -208,15 +225,72 @@ const [selectedImage, setSelectedImage] = useState(
             </p>
 
             <h2
-              style={{
-                margin: '30px 0',
-                color: '#c8a94d'
-              }}
-            >
+  style={{
+    margin: '30px 0',
+    color: '#c8a94d'
+  }}
+>
 
-              {product.price}
+  ${Number(product.price).toLocaleString('es-AR')}
 
-            </h2>
+</h2>
+<h3
+  style={{
+    marginBottom: '15px',
+    color: '#c8a94d'
+  }}
+>
+  Terminación
+</h3>
+
+<select
+
+  value={selectedColor}
+
+  onChange={(e) =>
+    setSelectedColor(e.target.value)
+  }
+
+  style={{
+    width: '100%',
+    padding: '14px',
+    background: '#1a1a1a',
+    color: 'white',
+    border: '1px solid #444',
+    borderRadius: '10px',
+    marginBottom: '20px'
+  }}
+
+>
+
+  {product.colors?.map((color) => (
+
+    <option
+      key={color}
+      value={color}
+    >
+      {color}
+    </option>
+
+  ))}
+
+</select>
+
+<p
+  style={{
+    color: '#aaa',
+    marginBottom: '30px'
+  }}
+>
+
+  Terminación seleccionada:
+
+  <strong>
+    {' '}
+    {selectedColor}
+  </strong>
+
+</p>
 
             <div
   style={{
@@ -254,7 +328,10 @@ const [selectedImage, setSelectedImage] = useState(
   }}
 >
 
-  6 cuotas de ${(parseInt(product.price.replace(/\D/g, '')) / 6).toFixed(0)}
+  6 cuotas de $
+  {(Number(product.price) / 6).toLocaleString('es-AR', {
+    maximumFractionDigits: 0
+  })}
 
 </p>
 
@@ -336,6 +413,71 @@ const [selectedImage, setSelectedImage] = useState(
 
 </div>
 
+{/* ========================= */}
+{/* SELECTOR DE CANTIDAD      */}
+{/* ========================= */}
+
+<div
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '15px',
+    marginBottom: '30px'
+  }}
+>
+
+  <button
+
+    onClick={() =>
+      quantity > 1 &&
+      setQuantity(quantity - 1)
+    }
+
+    style={{
+      width: '40px',
+      height: '40px',
+      borderRadius: '8px',
+      border: 'none',
+      cursor: 'pointer'
+    }}
+  >
+
+    -
+
+  </button>
+
+  <span
+    style={{
+      fontSize: '1.2rem',
+      fontWeight: 'bold'
+    }}
+  >
+
+    {quantity}
+
+  </span>
+
+  <button
+
+    onClick={() =>
+      setQuantity(quantity + 1)
+    }
+
+    style={{
+      width: '40px',
+      height: '40px',
+      borderRadius: '8px',
+      border: 'none',
+      cursor: 'pointer'
+    }}
+  >
+
+    +
+
+  </button>
+
+</div>
+
             {/* ========================= */}
             {/* Botones */}
             {/* ========================= */}
@@ -350,9 +492,25 @@ const [selectedImage, setSelectedImage] = useState(
 
               <button
 
-                onClick={() =>
-                  addToCart(product)
-                }
+                /* ========================= */
+                /* AGREGAR AL CARRITO */
+                /* Guarda también la */
+                /* terminación seleccionada */
+                /* ========================= */
+
+              onClick={() =>
+
+                   addToCart({
+
+  ...product,
+
+  selectedColor,
+
+  quantity
+
+})
+
+}
 
                 style={{
                   padding: '16px 30px',

@@ -37,7 +37,8 @@ function Products({
 
       !selectedCategory ||
 
-      product.category === selectedCategory;
+      product.category.toLowerCase() ===
+      selectedCategory.toLowerCase();
 
     // Filtra por búsqueda
     const matchesSearch =
@@ -75,7 +76,7 @@ const displayedProducts =
     ? filteredProducts.slice(0, 6)
 
     : filteredProducts;
-    console.log(displayedProducts.length)
+
   return (
 
     <section

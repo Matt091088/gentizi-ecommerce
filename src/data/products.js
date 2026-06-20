@@ -3,15 +3,16 @@ import rackImage from '../assets/images/racktvcajones.webp'
 import deskImage from '../assets/images/mesadeluz-vidrio.webp'
 import panelImage from '../assets/images/paneltv-ranuras.webp'
 import tableImage from '../assets/images/paneltvconranuras.webp'
+import placeholderImage from '../assets/images/placeholder-producto.png'
 
 // Productos
 const products = [
 
   {
   id: 1,
-  title: 'Rack Nórdico',
-  price: 250000 ,
-  image: rackImage,
+  title: 'Rack Melbourne',
+  price: 325000,
+  image: placeholderImage,
   isNew: true,
   featured: true,
   category: 'Racks',
@@ -19,9 +20,8 @@ const products = [
   paymentLink: 'https://google.com',
 
   description:
-    'Rack moderno de melamina con diseño minimalista y espacio de guardado premium.',
+    'Rack para TV con repisa superior y amplia baulera de almacenamiento.',
 
-  /* Especificaciones */
   width: '180 cm',
   height: '60 cm',
   depth: '40 cm',
@@ -31,257 +31,163 @@ const products = [
   delivery: '15 días',
 
   colors: [
-    'Roble',
-    'Blanco',
-    'Negro'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
   {
-    id: 2,
-    title: 'Mesa de Luz',
-    price: '$180.000',
-    image: deskImage,
-    isNew: false,
-    category: 'Mesas',
+  id: 3,
+  title: 'Panel Sydney',
+  price: 640000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Paneles',
 
-    paymentLink: 'https://google.com',
+  paymentLink: 'https://google.com',
 
-    description:
-      'Mesa de luz elegante con terminaciones modernas y estilo contemporáneo.',
+  description:
+    'Panel flotante con listones ranurados y repisa integrada para televisores de hasta 65 pulgadas.',
 
-      width: '50 cm',
-height: '60 cm',
-depth: '40 cm',
+  width: '200 cm',
+  height: '240 cm',
+  depth: '5 cm',
 
-material: 'Melamina Premium 18 mm',
+  material: 'Melamina Premium 18 mm',
 
-delivery: '15 días',
+  delivery: '20 días',
 
-colors: [
-  'Roble',
-  'Blanco'
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
 ]
-  },
+},
 
   {
-    id: 3,
-    title: 'Panel TV Ranurado',
-    price: '$320.000',
-    image: panelImage,
-    isNew: true,
-    category: 'Paneles',
+  id: 4,
+  title: 'Panel Melbourne',
+  price: 640000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Paneles',
 
-    paymentLink: 'https://google.com',
+  paymentLink: 'https://google.com',
 
-    description:
-      'Panel de TV moderno con ranuras decorativas y diseño sofisticado.',
+  description:
+    'Panel para TV con iluminación LED integrada, listones ranurados y amplias bauleras.',
 
-      width: '180 cm',
-height: '120 cm',
-depth: '5 cm',
+  width: '200 cm',
+  height: '240 cm',
+  depth: '5 cm',
 
-material: 'Melamina Premium 18 mm',
+  material: 'Melamina Premium 18 mm',
 
-delivery: '15 días',
+  delivery: '20 días',
 
-colors: [
-  'Roble',
-  'Negro'
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
 ]
-  },
+},
 
   {
-    id: 4,
-    title: 'Panel Moderno',
-    price: '$210.000',
-    image: tableImage,
-    isNew: false,
-    category: 'Paneles',
+  id: 5,
+  title: 'Rack Darwin',
+  price: 345000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Racks',
 
-    paymentLink: 'https://google.com',
+  paymentLink: 'https://google.com',
 
-    description:
-      'Panel premium para living moderno fabricado en melamina de alta calidad.',
+  description:
+    'Rack para TV con doble espesor, bauleras de almacenamiento y repisa de vidrio decorativa.',
 
-      width: '160 cm',
-height: '110 cm',
-depth: '5 cm',
+  width: '190 cm',
+  height: '60 cm',
+  depth: '40 cm',
 
-material: 'Melamina Premium 18 mm',
+  material: 'Melamina Premium 18 mm',
 
-delivery: '15 días',
+  delivery: '15 días',
 
-colors: [
-  'Roble',
-  'Blanco'
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
 ]
-  },
+},
 
   {
-    id: 5,
-    title: 'Rack Premium',
-    price: '$290.000',
-    image: rackImage,
-    isNew: true,
-    category: 'Racks',
+  id: 6,
+  title: 'Rack Byron',
+  price: 380000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Racks',
 
-    paymentLink: 'https://google.com',
+  paymentLink: 'https://google.com',
 
-    description:
-      'Rack premium con amplio espacio de guardado y diseño moderno para living.',
+  description:
+    'Rack flotante minimalista con iluminación LED interna y diseño sin manijas.',
 
-    width: '200 cm',
-    height: '65 cm',
-    depth: '40 cm',
+  width: '200 cm',
+  height: '45 cm',
+  depth: '35 cm',
 
-    material: 'Melamina Premium 18 mm',
+  material: 'Melamina Premium 18 mm',
 
-    delivery: '15 días',
+  delivery: '15 días',
 
-    colors: [
-      'Roble',
-      'Blanco',
-      'Negro'
-    ]
-  },
-
-  {
-    id: 6,
-    title: 'Rack Suspenso',
-    price: '$270.000',
-    image: rackImage,
-    isNew: false,
-    category: 'Racks',
-
-    paymentLink: 'https://google.com',
-
-    description:
-      'Rack flotante ideal para ambientes modernos y minimalistas.',
-
-    width: '180 cm',
-    height: '45 cm',
-    depth: '35 cm',
-
-    material: 'Melamina Premium 18 mm',
-
-    delivery: '15 días',
-
-    colors: [
-      'Roble',
-      'Blanco',
-      'Negro'
-    ]
-  },
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
+},
 
   {
-    id: 7,
-    title: 'Rack Industrial',
-    price: '$310.000',
-    image: rackImage,
-    isNew: true,
-    category: 'Racks',
+  id: 7,
+  title: 'Rack Canberra',
+  price: 390000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Racks',
 
-    paymentLink: 'https://google.com',
+  paymentLink: 'https://google.com',
 
-    description:
-      'Rack estilo industrial con detalles modernos y excelente capacidad de almacenamiento.',
+  description:
+    'Rack para TV con amplias bauleras inferiores, alacena superior y repisas flotantes decorativas.',
 
-    width: '220 cm',
-    height: '60 cm',
-    depth: '40 cm',
+  width: '180 cm',
+  height: '60 cm',
+  depth: '40 cm',
 
-    material: 'Melamina Premium 18 mm',
+  material: 'Melamina Premium 18 mm',
 
-    delivery: '20 días',
+  delivery: '20 días',
 
-    colors: [
-      'Roble',
-      'Negro'
-    ]
-  },
-
-  {
-    id: 8,
-    title: 'Mesa de Luz Oslo',
-    price: '$195.000',
-    image: deskImage,
-    isNew: true,
-    category: 'Mesas',
-
-    paymentLink: 'https://google.com',
-
-    description:
-      'Mesa de luz moderna inspirada en diseño escandinavo.',
-
-    width: '55 cm',
-    height: '60 cm',
-    depth: '40 cm',
-
-    material: 'Melamina Premium 18 mm',
-
-    delivery: '15 días',
-
-    colors: [
-      'Roble',
-      'Blanco'
-    ]
-  },
-
-  {
-    id: 9,
-    title: 'Mesa de Luz Nórdica',
-    price: '$205.000',
-    image: deskImage,
-    isNew: false,
-    category: 'Mesas',
-
-    paymentLink: 'https://google.com',
-
-    description:
-      'Mesa de luz con líneas simples y estilo nórdico.',
-
-    width: '55 cm',
-    height: '60 cm',
-    depth: '40 cm',
-
-    material: 'Melamina Premium 18 mm',
-
-    delivery: '15 días',
-
-    colors: [
-      'Roble',
-      'Blanco'
-    ]
-  },
-
-  {
-    id: 10,
-    title: 'Mesa de Luz Premium',
-    price: '$220.000',
-    image: deskImage,
-    isNew: true,
-    category: 'Mesas',
-
-    paymentLink: 'https://google.com',
-
-    description:
-      'Mesa de luz premium con mayor capacidad de guardado.',
-
-    width: '60 cm',
-    height: '65 cm',
-    depth: '40 cm',
-
-    material: 'Melamina Premium 18 mm',
-
-    delivery: '15 días',
-
-    colors: [
-      'Roble',
-      'Blanco',
-      'Negro'
-    ]
-  },
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
+},
 
   {
   id: 11,
@@ -305,10 +211,12 @@ colors: [
   delivery: '20 días',
 
   colors: [
-    'Roble',
-    'Blanco',
-    'Gris'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 {
@@ -333,9 +241,12 @@ colors: [
   delivery: '20 días',
 
   colors: [
-    'Blanco',
-    'Gris'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 {
@@ -360,10 +271,12 @@ colors: [
   delivery: '25 días',
 
   colors: [
-    'Roble',
-    'Negro',
-    'Blanco'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 /* ========================= */
@@ -372,19 +285,19 @@ colors: [
 
 {
   id: 14,
-  title: 'Cocina Nórdica',
-  price: '$1.250.000',
-  image: panelImage,
+  title: 'Cocina Clásica',
+  price: 1250000,
+  image: placeholderImage,
   isNew: true,
   category: 'Cocinas',
 
   paymentLink: 'https://google.com',
 
   description:
-    'Cocina moderna estilo nórdico con amplios espacios de guardado y diseño minimalista.',
+    'Cocina funcional y elegante con excelente capacidad de guardado. Ideal para quienes buscan calidad y diseño a un precio accesible.',
 
-  width: '300 cm',
-  height: '240 cm',
+  width: 'A medida',
+  height: 'A medida',
   depth: '60 cm',
 
   material: 'Melamina Premium 18 mm',
@@ -392,26 +305,30 @@ colors: [
   delivery: '30 días',
 
   colors: [
-    'Blanco',
-    'Roble'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 {
   id: 15,
   title: 'Cocina Premium',
-  price: '$1.850.000',
-  image: panelImage,
+  price: 1850000,
+  image: placeholderImage,
   isNew: true,
+  featured: true,
   category: 'Cocinas',
 
   paymentLink: 'https://google.com',
 
   description:
-    'Cocina premium con terminaciones exclusivas y excelente capacidad de almacenamiento.',
+    'Cocina de diseño moderno con mayores espacios de guardado, detalles premium y terminaciones de alta calidad.',
 
-  width: '400 cm',
-  height: '240 cm',
+  width: 'A medida',
+  height: 'A medida',
   depth: '60 cm',
 
   material: 'Melamina Premium 18 mm',
@@ -419,37 +336,43 @@ colors: [
   delivery: '35 días',
 
   colors: [
-    'Negro',
-    'Roble',
-    'Blanco'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 {
   id: 16,
-  title: 'Cocina Moderna',
-  price: '$1.450.000',
-  image: panelImage,
-  isNew: false,
+  title: 'Cocina Deluxe',
+  price: 2500000,
+  image: placeholderImage,
+  isNew: true,
+  featured: true,
   category: 'Cocinas',
 
   paymentLink: 'https://google.com',
 
   description:
-    'Cocina funcional con diseño moderno ideal para espacios contemporáneos.',
+    'Nuestra línea más exclusiva. Diseño contemporáneo, máxima capacidad de almacenamiento y terminaciones de lujo para proyectos premium.',
 
-  width: '350 cm',
-  height: '240 cm',
+  width: 'A medida',
+  height: 'A medida',
   depth: '60 cm',
 
   material: 'Melamina Premium 18 mm',
 
-  delivery: '30 días',
+  delivery: '40 días',
 
   colors: [
-    'Blanco',
-    'Gris'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 /* ========================= */
@@ -458,84 +381,66 @@ colors: [
 
 {
   id: 17,
-  title: 'Escritorio Ejecutivo',
-  price: '$420.000',
-  image: deskImage,
+  title: 'Escritorio Canberra Executive',
+  price: 750000,
+  image: placeholderImage,
   isNew: true,
+  featured: true,
   category: 'Escritorios',
 
   paymentLink: 'https://google.com',
 
   description:
-    'Escritorio ejecutivo con amplio espacio de trabajo y diseño profesional.',
+    'Escritorio gerencial en L con diseño premium, seis cajoneras, puertas corredizas y gran capacidad de almacenamiento. Ideal para oficinas ejecutivas.',
 
-  width: '160 cm',
+  width: '180 cm a 250 cm',
   height: '75 cm',
   depth: '60 cm',
-
-  material: 'Melamina Premium 18 mm',
-
-  delivery: '15 días',
-
-  colors: [
-    'Roble',
-    'Negro'
-  ]
-},
-
-{
-  id: 18,
-  title: 'Escritorio Home Office',
-  price: '$320.000',
-  image: deskImage,
-  isNew: false,
-  category: 'Escritorios',
-
-  paymentLink: 'https://google.com',
-
-  description:
-    'Ideal para teletrabajo, estudio y espacios reducidos.',
-
-  width: '120 cm',
-  height: '75 cm',
-  depth: '60 cm',
-
-  material: 'Melamina Premium 18 mm',
-
-  delivery: '15 días',
-
-  colors: [
-    'Blanco',
-    'Roble'
-  ]
-},
-
-{
-  id: 19,
-  title: 'Escritorio Gamer',
-  price: '$480.000',
-  image: deskImage,
-  isNew: true,
-  category: 'Escritorios',
-
-  paymentLink: 'https://google.com',
-
-  description:
-    'Diseñado para setups gamer con gran superficie y estilo moderno.',
-
-  width: '180 cm',
-  height: '75 cm',
-  depth: '70 cm',
 
   material: 'Melamina Premium 18 mm',
 
   delivery: '20 días',
 
   colors: [
-    'Negro',
-    'Rojo'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
+
+{
+  id: 18,
+  title: 'Escritorio Byron Corner',
+  price: 425000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Escritorios',
+
+  paymentLink: 'https://google.com',
+
+  description:
+    'Escritorio en L con biblioteca inferior integrada y puertas baulera. Perfecto para home office y espacios de trabajo modernos.',
+
+  width: '150 cm',
+  height: '75 cm',
+  depth: '60 cm',
+
+  material: 'Melamina Premium 18 mm',
+
+  delivery: '15 días',
+
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
+},
+
+
 
 /* ========================= */
 /* VANITORYS */
@@ -563,9 +468,12 @@ colors: [
   delivery: '15 días',
 
   colors: [
-    'Blanco',
-    'Roble'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 {
@@ -590,10 +498,12 @@ colors: [
   delivery: '20 días',
 
   colors: [
-    'Negro',
-    'Blanco',
-    'Roble'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
 {
@@ -618,9 +528,103 @@ colors: [
   delivery: '15 días',
 
   colors: [
-    'Blanco',
-    'Gris'
-  ]
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
+},
+
+{
+  id: 23,
+  title: 'Mesa Ratona Bondi',
+  price: 180000,
+  image: placeholderImage,
+  isNew: true,
+  featured: true,
+  category: 'Mesas',
+
+  paymentLink: 'https://google.com',
+
+  description:
+    'Mesa ratona con tapa de vidrio y diseño moderno. Ideal para livings contemporáneos.',
+
+  width: '90 cm',
+  height: '40 cm',
+  depth: '50 cm',
+
+  material: 'Melamina Premium 18 mm + Vidrio',
+
+  delivery: '15 días',
+
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
+},
+
+{
+  id: 24,
+  title: 'Mesa Ratona Brisbane',
+  price: 230000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Mesas',
+
+  paymentLink: 'https://google.com',
+
+  description:
+    'Mesa ratona elevable con espacio de guardado. Ideal para trabajar con notebook o desayunar cómodamente desde el sofá.',
+
+  width: '90 cm',
+  height: '40 cm',
+  depth: '50 cm',
+
+  material: 'Melamina Premium 18 mm',
+
+  delivery: '15 días',
+
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
+},
+
+{
+  id: 25,
+  title: 'Mesa Ratona Perth',
+  price: 155000,
+  image: placeholderImage,
+  isNew: true,
+  category: 'Mesas',
+
+  paymentLink: 'https://google.com',
+
+  description:
+    'Mesa ratona de doble espesor con cubo flotante inferior para revistas, decoración y objetos de uso diario.',
+
+  width: '90 cm',
+  height: '40 cm',
+  depth: '40 cm',
+
+  material: 'Melamina Premium 18 mm',
+
+  delivery: '15 días',
+
+  colors: [
+  'Blanco + Camelia',
+  'Negro + Home',
+  'Blanco + Amberes',
+  'Gris Tapir + Carvalho Mezzo',
+  'Nogal + Negro'
+]
 },
 
   /* Los paneles los dejamos como ya los tenías */

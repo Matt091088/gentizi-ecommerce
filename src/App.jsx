@@ -211,6 +211,8 @@ function decreaseQuantity(id) {
 
   setIsCartOpen={setIsCartOpen}
 
+  setCartItems={setCartItems}
+
 />
 
 {/* Quick View */}
@@ -232,11 +234,13 @@ function decreaseQuantity(id) {
 )} */}
 
 
+{/* Notificación carrito */}
+
 {showNotification && (
 
   <div className="cart-notification">
 
-    ✅ Producto agregado al carrito
+    🛒 Producto agregado al carrito
 
   </div>
 

@@ -10,21 +10,64 @@ function Cart({
 
   isCartOpen,
 
-  setIsCartOpen
+  setIsCartOpen,
+
+  setCartItems
 
 }) {
 
-  const total = cartItems.reduce((acc, item) => {
+  const total = cartItems.reduce(
 
-    const numericPrice = Number(
-      item.price
-        .replace('$', '')
-        .replace(/\./g, '')
-    );
+  (acc, item) =>
 
-    return acc + (numericPrice * item.quantity);
+    acc + Number(item.price) * item.quantity,
 
-  }, 0);
+  0
+
+)
+
+function handleCheckout() {
+
+ const productsText = cartItems
+
+  .map(
+
+    item =>
+
+`• ${item.title} x${item.quantity}
+
+  Terminación: ${item.selectedColor || 'Sin especificar'}`
+
+  )
+
+  .join('\n')
+
+  const message =
+
+`Hola, quiero realizar el siguiente pedido:
+
+${productsText}
+
+Total: $${total.toLocaleString('es-AR')}
+
+Nombre:
+Localidad:
+Forma de pago:`
+
+  window.open(
+
+    `https://wa.me/5493765253186?text=${encodeURIComponent(message)}`,
+
+    '_blank'
+
+  )
+
+  setIsCartOpen(false)
+
+  setCartItems([])
+
+}
+
 
   return (
 
@@ -78,6 +121,25 @@ function Cart({
                 <div className="cart-info">
 
                   <h4>{item.title}</h4>
+                  {/* ========================= */}
+{/* TERMINACIÓN ELEGIDA       */}
+{/* ========================= */}
+
+{item.selectedColor && (
+
+  <p
+    style={{
+      fontSize: '0.85rem',
+      color: '#c8a94d',
+      margin: '5px 0'
+    }}
+  >
+
+    {item.selectedColor}
+
+  </p>
+
+)}
 
                   <p>{item.price}</p>
 
@@ -120,11 +182,17 @@ function Cart({
 
               </h3>
 
-              <button className="checkout-button">
+              <button
 
-                Finalizar Compra
+  className="checkout-button"
 
-              </button>
+  onClick={handleCheckout}
+
+>
+
+  Finalizar Compra
+
+</button>
 
             </div>
 
