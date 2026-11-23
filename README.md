@@ -10,7 +10,7 @@ The project includes a product catalog organized into categories, allowing users
 
 ## 📸 Preview
 
-![Gentizi Ecommerce - Homepage](screenshots/home.png)
+![Gentizi Ecommerce - Homepage](home.png)
 
 ## ✨ Features
 
