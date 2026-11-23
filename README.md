@@ -8,6 +8,10 @@ Gentizi Ecommerce is a web application designed to showcase and browse furniture
 
 The project includes a product catalog organized into categories, allowing users to explore furniture and manage their shopping cart.
 
+## 📸 Preview
+
+![Gentizi Ecommerce - Homepage](screenshots/home.png)
+
 ## ✨ Features
 
 - Product catalog
