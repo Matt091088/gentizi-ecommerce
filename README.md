@@ -18,12 +18,17 @@ Independently designed and developed by me, with AI-assisted guidance throughout
 
 ## ✨ Features
 
-- Product catalog
-- Product categories: Racks, Tables and Panels
-- Product filtering
-- Shopping cart
-- Cart data persistence using LocalStorage
-- Client-side navigation with React Router
+- Product catalog for a real melamine furniture business
+- Product categories and individual product pages
+- Product search functionality
+- Shopping cart with quantity management
+- Cart persistence using LocalStorage
+- Dynamic cart item counter
+- Category-based navigation
+- Product detail pages
+- Add-to-cart notifications
+- WhatsApp contact button
+- Responsive user interface
 
 ## 🛠️ Technologies
 
