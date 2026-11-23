@@ -1,16 +1,44 @@
-# React + Vite
+# Gentizi Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An online furniture store built with React and Vite.
 
-Currently, two official plugins are available:
+## 🛋️ About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Gentizi Ecommerce is a web application designed to showcase and browse furniture products.
 
-## React Compiler
+The project includes a product catalog organized into categories, allowing users to explore furniture and manage their shopping cart.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Product catalog
+- Product categories: Racks, Tables and Panels
+- Product filtering
+- Shopping cart
+- Cart data persistence using LocalStorage
+- Client-side navigation with React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies
+
+- React
+- JavaScript
+- Vite
+- React Router
+- LocalStorage
+- CSS
+
+## 🌐 Live Demo
+
+[Visit Gentizi Ecommerce](https://gentizi-ecommerce.vercel.app/)
+
+## 💻 Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Matt091088/gentizi-ecommerce.git
+
+   cd gentizi-ecommerce
+
+   npm install
+
+   npm run dev
